@@ -59,5 +59,70 @@ const main = document.querySelector('.main-content');
 // top
 const top = document.querySelector('.top-content');
 top.children[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+top.children[0].children[0].classList.add('text-content');
 top.children[0].children[1].textContent = siteContent["main-content"]["features-content"];
+top.children[0].children[1].classList.add('text-content');
+top.children[1].children[0].textContent = siteContent["main-content"]["about-h4"];
+top.children[1].children[0].classList.add('text-content');
+top.children[1].children[1].textContent = siteContent
+["main-content"]["about-content"];
+top.children[1].children[1].classList.add('text-content');
+
+// middle img 
+const middleImg = document.querySelector('#middle-img');
+middleImg.classList.add('middle-img');
+middleImg.setAttribute('src', siteContent.images["accent-img"]);
+
+// bottom
+
+const bottom = document.querySelector('.bottom-content');
+bottom.children[0].children[0].textContent = siteContent["main-content"]["services-h4"];
+bottom.children[0].children[0].classList.add('text-content');
+bottom.children[0].children[1].textContent = siteContent["main-content"]["services-content"];
+bottom.children[0].children[1].classList.add('text-content');
+bottom.children[1].children[0].textContent = siteContent["main-content"]["product-h4"];
+bottom.children[1].children[0].classList.add('text-content');
+bottom.children[1].children[1].textContent = siteContent["main-content"]["product-content"];
+bottom.children[1].children[1].classList.add('text-content');
+bottom.children[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
+bottom.children[2].children[0].classList.add('text-content');
+bottom.children[2].children[1].textContent = siteContent["main-content"]["vision-content"];
+bottom.children[2].children[1].classList.add('text-content');
+
+// cta
+const cta = document.querySelector('.cta');
+const ctaText = document.querySelector('.cta-text');
+ctaText.children[0].textContent = siteContent.cta.h1;
+ctaText.children[1].textContent = siteContent.cta.button;
+
+// cta-img
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent.images["cta-img"]);
+
+// header
+const container = document.querySelector('.container');
+const header = document.querySelector('header');
+const nav = document.querySelector('header nav');
+nav.children[0].textContent = siteContent.nav["nav-item-1"];
+nav.children[0].classList.add('italic');
+nav.children[1].textContent = siteContent.nav["nav-item-2"];
+nav.children[1].classList.add('italic');
+nav.children[2].textContent = siteContent.nav["nav-item-3"];
+nav.children[2].classList.add('italic');
+nav.children[3].textContent = siteContent.nav["nav-item-4"];
+nav.children[3].classList.add('italic');
+nav.children[4].textContent = siteContent.nav["nav-item-5"];
+nav.children[4].classList.add('italic');
+nav.children[5].textContent = siteContent.nav["nav-item-6"];
+nav.children[5].classList.add('italic');
+
+// logo img 
+const logoImg = document.querySelector('#logo-img');
+logoImg.classList.add('logo');
+logoImg.setAttribute('src', siteContent.images["logo-img"]);
+
+
+
+
+
 
