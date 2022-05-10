@@ -40,3 +40,24 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// footer
+const footerlink = document.querySelector('footer a');
+footerlink.textContent = siteContent.footer.copyright;
+footerlink.classList.add('bold');
+
+// contact
+const contact = document.querySelector('section.contact');
+contact.children[0].textContent = siteContent.contact["contact-h4"];
+contact.children[1].textContent = siteContent.contact.address;
+contact.children[2].textContent = siteContent.contact.phone;
+contact.children[3].textContent = siteContent.contact.email;
+
+// main content
+const main = document.querySelector('.main-content');
+
+// top
+const top = document.querySelector('.top-content');
+top.children[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+top.children[0].children[1].textContent = siteContent["main-content"]["features-content"];
+
